@@ -7,6 +7,9 @@
   "module": "dist/module.js",
   "types": "dist/types.d.ts",
   "author": "Irving Armenta",
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "scripts": {
     "watch": "parcel watch",
