@@ -1,11 +1,10 @@
 {
-  "name": "root",
+  "name": "@irubingu/root",
   "version": "1.0.0",
   "description": "components library with lerna and parcel",
   "main": "index.js",
   "author": "Irving Armenta",
   "license": "MIT",
-  "private": true,
   "workspaces": {
     "packages": [
       "packages/*"

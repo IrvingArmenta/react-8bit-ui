@@ -16,5 +16,6 @@
     "@stitches/react": "^1.2.5",
     "motion": "^10.4.0",
     "react": "^17.0.2"
-  }
+  },
+  "gitHead": "401d29d53e3f96596381513fc16cb4b9ab283eee"
 }
