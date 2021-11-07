@@ -11,7 +11,7 @@ const StyledButton = styled('button', {
     },
   });
 
-const Button: FC<{ fontSize: string } & HTMLAttributes<HTMLButtonElement>> = (props) => {
+const Button: FC<{ fontSize?: string } & HTMLAttributes<HTMLButtonElement>> = (props) => {
     const { children, fontSize, ...rest } = props;
     return <StyledButton css={{ fontSize: fontSize }}>{children}</StyledButton>
 }
