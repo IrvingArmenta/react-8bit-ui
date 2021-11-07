@@ -1,11 +1,11 @@
-import {jsx as $73ohf$jsx} from "react/jsx-runtime";
+import {jsx as $5DQ6U$jsx} from "react/jsx-runtime";
 import "react";
-import {styled as $73ohf$styled} from "@stitches/react";
+import {styled as $5DQ6U$styled} from "@stitches/react";
 
 
 
 
-const $8aa4c2e2539ebca4$var$StyledButton = $73ohf$styled('button', {
+const $8aa4c2e2539ebca4$var$StyledButton = $5DQ6U$styled('button', {
     backgroundColor: 'gainsboro',
     borderRadius: '9999px',
     fontSize: '14px',
@@ -16,7 +16,7 @@ const $8aa4c2e2539ebca4$var$StyledButton = $73ohf$styled('button', {
 });
 const $8aa4c2e2539ebca4$var$Button = (props)=>{
     const { children: children , fontSize: fontSize , ...rest } = props;
-    return(/*#__PURE__*/ $73ohf$jsx($8aa4c2e2539ebca4$var$StyledButton, {
+    return(/*#__PURE__*/ $5DQ6U$jsx($8aa4c2e2539ebca4$var$StyledButton, {
         css: {
             fontSize: fontSize
         },
@@ -30,7 +30,7 @@ var $8aa4c2e2539ebca4$export$2e2bcd8739ae039 = $8aa4c2e2539ebca4$var$Button;
 
 const $7871633b912eed47$var$Testing = (props)=>{
     const { children: children , text: text  } = props;
-    return(/*#__PURE__*/ $73ohf$jsx("h3", {
+    return(/*#__PURE__*/ $5DQ6U$jsx("h3", {
         children: children || text
     }));
 };

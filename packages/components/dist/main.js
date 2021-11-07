@@ -1,6 +1,6 @@
-var $cOWmH$reactjsxruntime = require("react/jsx-runtime");
+var $cfmYl$reactjsxruntime = require("react/jsx-runtime");
 require("react");
-var $cOWmH$stitchesreact = require("@stitches/react");
+var $cfmYl$stitchesreact = require("@stitches/react");
 
 function $parcel$export(e, n, v, s) {
   Object.defineProperty(e, n, {get: v, set: s, enumerable: true, configurable: true});
@@ -11,7 +11,7 @@ $parcel$export(module.exports, "Testing", () => $f00d71b02c24f9f8$export$2e2bcd8
 
 
 
-const $816e8b2c1f75abf4$var$StyledButton = $cOWmH$stitchesreact.styled('button', {
+const $816e8b2c1f75abf4$var$StyledButton = $cfmYl$stitchesreact.styled('button', {
     backgroundColor: 'gainsboro',
     borderRadius: '9999px',
     fontSize: '14px',
@@ -22,7 +22,7 @@ const $816e8b2c1f75abf4$var$StyledButton = $cOWmH$stitchesreact.styled('button',
 });
 const $816e8b2c1f75abf4$var$Button = (props)=>{
     const { children: children , fontSize: fontSize , ...rest } = props;
-    return(/*#__PURE__*/ $cOWmH$reactjsxruntime.jsx($816e8b2c1f75abf4$var$StyledButton, {
+    return(/*#__PURE__*/ $cfmYl$reactjsxruntime.jsx($816e8b2c1f75abf4$var$StyledButton, {
         css: {
             fontSize: fontSize
         },
@@ -36,7 +36,7 @@ var $816e8b2c1f75abf4$export$2e2bcd8739ae039 = $816e8b2c1f75abf4$var$Button;
 
 const $f00d71b02c24f9f8$var$Testing = (props)=>{
     const { children: children , text: text  } = props;
-    return(/*#__PURE__*/ $cOWmH$reactjsxruntime.jsx("h3", {
+    return(/*#__PURE__*/ $cfmYl$reactjsxruntime.jsx("h3", {
         children: children || text
     }));
 };
