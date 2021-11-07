@@ -1,6 +1,6 @@
 {
   "name": "@irubingu/react-8bit-ui",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.0",
   "description": "components to share",
   "source": "index.ts",
   "main": "dist/main.js",
