@@ -2,19 +2,18 @@
   "name": "@irubingu/react-8bit-ui",
   "version": "1.2.3-alpha.0",
   "description": "components to share",
-  "source": "src/index.ts",
-  "main": "dist/main.js",
-  "module": "dist/module.js",
-  "types": "dist/types.d.ts",
-  "author": "Irving Armenta",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
   "files": [
-    "dist"
+    "/lib"
   ],
+  "author": "Irving Armenta",
   "license": "MIT",
   "scripts": {
-    "watch": "parcel watch",
-    "build": "parcel build",
-    "prepublish": "parcel build"
+    "build": "rollup -c",
+    "dev": "rollup -cw",
+    "prepublish": "rollup -c"
   },
   "publishConfig": {
     "access": "public"
@@ -22,7 +21,25 @@
   "peerDependencies": {
     "@stitches/react": "^1.2.5",
     "motion": "^10.4.0",
-    "react": "^17.0.2"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
-  "gitHead": "de29923501826ea25154a47f539061d3efbb6114"
+  "gitHead": "de29923501826ea25154a47f539061d3efbb6114",
+  "devDependencies": {
+    "@parcel/transformer-typescript-tsc": "^2.0.1",
+    "microbundle": "^0.14.2",
+    "microbundle-crl": "^0.13.11",
+    "parcel": "^2.0.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.63.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.31.1",
+    "rollup-plugin-uglify": "^6.0.4",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "@irubingu/react-8bit-tokens": "^1.0.0"
+  }
 }

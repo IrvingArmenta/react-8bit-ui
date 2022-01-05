@@ -1,0 +1,9 @@
+{
+  "aliases": {
+    "primary": "#209cee",
+    "success": "#92cc41",
+    "warning": "#f7d51d",
+    "error": "#e76e55",
+    "disabled": "#d3d3d3"
+  }
+}
