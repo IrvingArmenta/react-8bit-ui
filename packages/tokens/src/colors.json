@@ -1,0 +1,31 @@
+{
+"global": {
+  "type": "color",
+  "category": "buttons"
+},
+"props": [
+    {
+      "name": "primary",
+      "value": "{!primary}"
+    },
+    {
+      "name": "success",
+      "value": "{!success}"
+    },
+    {
+      "name": "warning",
+      "value": "{!warning}"
+    },
+    {
+      "name": "error",
+      "value": "{!error}"
+    },
+    {
+      "name": "disabled",
+      "value": "{!disabled}"
+    }
+ ],
+ "imports": [
+   "./alias/color-alias.json"
+ ]
+}

@@ -1,2 +1,3 @@
 export { default as Button } from './Button';
-export { default as Testing } from './Testing';
+export { globalReact8BitStyles } from './globalStyles';
+export { globalReact8BitStylesObj } from './globalStyles';
