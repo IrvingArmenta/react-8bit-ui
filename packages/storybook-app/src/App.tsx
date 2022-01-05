@@ -19,7 +19,7 @@ function App() {
         >
           Learn React
         </a>
-        <Button color="error">YEAAAH</Button>
+        <Button color="success">YEAAAH</Button>
       </header>
     </div>
   );
