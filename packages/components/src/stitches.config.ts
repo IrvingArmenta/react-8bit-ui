@@ -1,5 +1,5 @@
 import { createStitches } from '@stitches/react';
-import tokens from '@irubingu/react-8bit-tokens/build/tokens';
+import colorTokens from '@irubingu/react-8bit-tokens/build/colors';
 
 export const {
   styled,
@@ -13,11 +13,13 @@ export const {
 } = createStitches({
   theme: {
     colors: {
-      ...tokens
+      ...colorTokens
     }
   },
   media: {
-    bp1: '(min-width: 480px)'
+    bp1: '(min-width: 480px)',
+    pixelRatio:
+      '(-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm)'
   },
   prefix: 'react8bit',
   utils: {

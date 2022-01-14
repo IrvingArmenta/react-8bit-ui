@@ -1,11 +1,14 @@
 export declare const globalReact8BitStylesObj: {
     html: {
-        lineHeight: number;
+        fontSize: number;
         '-webkit-text-size-adjust': string;
         '-webkit-tap-highlight-color': string;
     };
     body: {
         margin: number;
+        fontFamily: string;
+        lineHeight: number;
+        fontSize: number;
     };
     '*, ::before, ::after': {
         boxSizing: string;

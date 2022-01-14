@@ -12,7 +12,7 @@
     ]
   },
   "scripts": {
-    "dev": "lerna run dev --parallel --ignore @irubingu/react-8bit-tokens"
+    "dev": "lerna run dev --parallel"
   },
   "devDependencies": {
     "@types/react": "^17.0.38",
