@@ -1,9 +1,9 @@
 {
-"global": {
-  "type": "color",
-  "category": "buttons"
-},
-"props": [
+  "global": {
+    "type": "color",
+    "category": "buttons"
+  },
+  "props": [
     {
       "name": "primary",
       "value": "{!primary}"
@@ -19,13 +19,7 @@
     {
       "name": "error",
       "value": "{!error}"
-    },
-    {
-      "name": "disabled",
-      "value": "{!disabled}"
     }
- ],
- "imports": [
-   "./alias/color-alias.json"
- ]
+  ],
+  "imports": ["./alias/color-alias.json"]
 }

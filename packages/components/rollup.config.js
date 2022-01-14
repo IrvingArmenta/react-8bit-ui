@@ -1,5 +1,6 @@
 import typescript from 'rollup-plugin-typescript2';
-import sourceMaps from 'rollup-plugin-sourcemaps';
+import resolve from 'rollup-plugin-node-resolve';
+import sourcemaps from 'rollup-plugin-sourcemaps';
 import { terser } from 'rollup-plugin-terser';
 import pkg from './package.json';
 
@@ -22,10 +23,11 @@ export default {
     'react/jsx-runtime'
   ],
   plugins: [
+    resolve(),
     typescript({
       typescript: require('typescript'),
     }),
-    sourceMaps(),
+    sourcemaps(),
     terser()
   ],
 };

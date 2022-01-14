@@ -2,12 +2,15 @@ import { globalCss } from './stitches.config';
 
 export const globalReact8BitStylesObj = {
   html: {
-    lineHeight: 1.15,
+    fontSize: 16,
     '-webkit-text-size-adjust': '100%',
     '-webkit-tap-highlight-color': 'transparent'
   },
   body: {
-    margin: 0
+    margin: 0,
+    fontFamily: "'Press Start 2P' sans-serif",
+    lineHeight: 1.5,
+    fontSize: 16
   },
   '*, ::before, ::after': {
     boxSizing: 'border-box',

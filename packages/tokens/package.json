@@ -10,9 +10,10 @@
     "default": "./build/tokens.ts"
   },
   "scripts": {
-    "build": "ts-node index.ts",
-    "postbuild": "quicktype build/tokens.json -o build/React8BitTokensType.ts --just-types && yarn prettier --write ./build/tokens.ts",
-    "dev": "nodemon index.ts"
+    "build": "ts-node src/index.ts",
+    "prebuild": "rimraf ./build",
+    "postbuild": "quicktype build/tokens.json -o build/React8BitTokensTypes.ts --just-types && prettier **/* --write --ignore-unknown --loglevel=error",
+    "dev": "watch-run -p 'src/**/*.ts,src/**/*.tsx' yarn build"
   },
   "devDependencies": {
     "@types/node": "^17.0.5",
@@ -24,13 +25,14 @@
     "json-to-js": "^1.0.2",
     "maketypes": "^1.1.2",
     "microbundle": "^0.14.2",
-    "nodemon": "^2.0.15",
     "optimist": "^0.6.1",
     "parcel": "^2.0.1",
     "prettier": "^2.5.1",
     "quicktype": "^15.0.260",
+    "rimraf": "^3.0.2",
     "theo": "^8.1.5",
     "ts-node": "^10.4.0",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.4",
+    "watch-run": "^1.2.5"
   }
 }

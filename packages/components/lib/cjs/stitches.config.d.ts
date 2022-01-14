@@ -3,14 +3,13 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     [name: string]: unknown;
 })[], CSS = import("@stitches/react/types/css-util").CSS<{
     bp1: "(min-width: 480px)";
+    pixelRatio: "(-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm)";
 }, {
     colors: {
         primary: string;
         success: string;
         warning: string;
         error: string;
-        disabled: string;
-        customEasing: string;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {
     marginX: (value: number) => {
@@ -30,16 +29,16 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     defaultVariants?: ("variants" extends keyof Composers[K] ? { [Name_1 in keyof Composers[K][keyof Composers[K] & "variants"]]?: import("@stitches/react/types/util").String | import("@stitches/react/types/util").Widen<keyof Composers[K][keyof Composers[K] & "variants"][Name_1]> | undefined; } : import("@stitches/react/types/util").WideObject) | undefined;
 } & CSS & { [K2 in keyof Composers[K]]: K2 extends "compoundVariants" | "defaultVariants" | "variants" ? unknown : K2 extends keyof CSS ? CSS[K2] : unknown; }; }) => import("@stitches/react/types/styled-component").StyledComponent<Type, import("@stitches/react/types/styled-component").StyledComponentProps<Composers>, {
     bp1: "(min-width: 480px)";
+    pixelRatio: "(-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm)";
 }, import("@stitches/react/types/css-util").CSS<{
     bp1: "(min-width: 480px)";
+    pixelRatio: "(-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm)";
 }, {
     colors: {
         primary: string;
         success: string;
         warning: string;
         error: string;
-        disabled: string;
-        customEasing: string;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {
     marginX: (value: number) => {
@@ -50,14 +49,13 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     [name: string]: unknown;
 })[], CSS = import("@stitches/react/types/css-util").CSS<{
     bp1: "(min-width: 480px)";
+    pixelRatio: "(-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm)";
 }, {
     colors: {
         primary: string;
         success: string;
         warning: string;
         error: string;
-        disabled: string;
-        customEasing: string;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {
     marginX: (value: number) => {
@@ -77,6 +75,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     defaultVariants?: ("variants" extends keyof Composers[K] ? { [Name_1 in keyof Composers[K][keyof Composers[K] & "variants"]]?: import("@stitches/react/types/util").String | import("@stitches/react/types/util").Widen<keyof Composers[K][keyof Composers[K] & "variants"][Name_1]> | undefined; } : import("@stitches/react/types/util").WideObject) | undefined;
 } & CSS & { [K2 in keyof Composers[K]]: K2 extends "compoundVariants" | "defaultVariants" | "variants" ? unknown : K2 extends keyof CSS ? CSS[K2] : unknown; }; }) => import("@stitches/react/types/styled-component").CssComponent<import("@stitches/react/types/styled-component").StyledComponentType<Composers>, import("@stitches/react/types/styled-component").StyledComponentProps<Composers>, {
     bp1: "(min-width: 480px)";
+    pixelRatio: "(-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm)";
 }, CSS>, globalCss: <Styles extends {
     [K: string]: any;
 }>(...styles: ({
@@ -85,14 +84,13 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
 } & { [K in keyof Styles]: K extends "@import" ? string | string[] : K extends "@font-face" ? import("@stitches/react/types/css").AtRule.FontFace | import("@stitches/react/types/css").AtRule.FontFace[] : K extends `@keyframes ${string}` ? {
     [x: string]: import("@stitches/react/types/css-util").CSS<{
         bp1: "(min-width: 480px)";
+        pixelRatio: "(-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm)";
     }, {
         colors: {
             primary: string;
             success: string;
             warning: string;
             error: string;
-            disabled: string;
-            customEasing: string;
         };
     }, import("@stitches/react/types/config").DefaultThemeMap, {
         marginX: (value: number) => {
@@ -102,14 +100,13 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     }>;
 } : K extends `@property ${string}` ? import("@stitches/react/types/css").AtRule.Property : import("@stitches/react/types/css-util").CSS<{
     bp1: "(min-width: 480px)";
+    pixelRatio: "(-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm)";
 }, {
     colors: {
         primary: string;
         success: string;
         warning: string;
         error: string;
-        disabled: string;
-        customEasing: string;
     };
 }, import("@stitches/react/types/config").DefaultThemeMap, {
     marginX: (value: number) => {
@@ -119,14 +116,13 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
 }>; })[]) => () => string, keyframes: (style: {
     [offset: string]: import("@stitches/react/types/css-util").CSS<{
         bp1: "(min-width: 480px)";
+        pixelRatio: "(-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm)";
     }, {
         colors: {
             primary: string;
             success: string;
             warning: string;
             error: string;
-            disabled: string;
-            customEasing: string;
         };
     }, import("@stitches/react/types/config").DefaultThemeMap, {
         marginX: (value: number) => {
@@ -146,8 +142,6 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         success: import("@stitches/react/types/theme").Token<"success", string, "colors", "react8bit">;
         warning: import("@stitches/react/types/theme").Token<"warning", string, "colors", "react8bit">;
         error: import("@stitches/react/types/theme").Token<"error", string, "colors", "react8bit">;
-        disabled: import("@stitches/react/types/theme").Token<"disabled", string, "colors", "react8bit">;
-        customEasing: import("@stitches/react/types/theme").Token<"customEasing", string, "colors", "react8bit">;
     };
 }, createTheme: <Argument0 extends string | ({
     colors?: {
@@ -155,8 +149,6 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         success?: string | number | boolean | undefined;
         warning?: string | number | boolean | undefined;
         error?: string | number | boolean | undefined;
-        disabled?: string | number | boolean | undefined;
-        customEasing?: string | number | boolean | undefined;
     } | undefined;
 } & {
     [x: string]: {
@@ -169,8 +161,6 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         success?: string | number | boolean | undefined;
         warning?: string | number | boolean | undefined;
         error?: string | number | boolean | undefined;
-        disabled?: string | number | boolean | undefined;
-        customEasing?: string | number | boolean | undefined;
     } | undefined;
 } & {
     [x: string]: {
@@ -184,6 +174,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     prefix: "react8bit";
     media: {
         bp1: "(min-width: 480px)";
+        pixelRatio: "(-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm)";
     };
     theme: {
         colors: {
@@ -191,8 +182,6 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             success: string;
             warning: string;
             error: string;
-            disabled: string;
-            customEasing: string;
         };
     };
     themeMap: import("@stitches/react/types/config").DefaultThemeMap;
