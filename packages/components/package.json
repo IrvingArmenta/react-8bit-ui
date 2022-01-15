@@ -1,6 +1,6 @@
 {
   "name": "@irubingu/react-8bit-ui",
-  "version": "1.2.6-alpha.0",
+  "version": "1.2.9-alpha.0",
   "description": "components to share",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -45,6 +45,6 @@
     "watch-run": "^1.2.5"
   },
   "dependencies": {
-    "@irubingu/react-8bit-tokens": "^1.2.6-alpha.0"
+    "@irubingu/react-8bit-tokens": "^1.2.9-alpha.0"
   }
 }
