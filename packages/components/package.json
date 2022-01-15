@@ -19,6 +19,7 @@
     "access": "public"
   },
   "peerDependencies": {
+    "@irubingu/react-8bit-tokens": "^1.2.7-alpha.0",
     "@stitches/react": "^1.2.5",
     "motion": "^10.4.0",
     "polished": "^4.1.3",
