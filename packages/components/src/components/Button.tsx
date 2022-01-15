@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import { styled } from '../stitches.config';
-import { colorsTokens } from '@irubingu/react-8bit-tokens/build';
+import { colorsTokens } from '@irubingu/react-8bit-tokens';
 import { rem } from 'polished';
 import typedObjectKeys from '../utils/typedObjectKeys';
 
