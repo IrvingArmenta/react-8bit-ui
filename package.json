@@ -12,7 +12,8 @@
     ]
   },
   "scripts": {
-    "dev": "lerna run dev --parallel"
+    "dev": "lerna run dev --parallel",
+    "force-publish": "lerna publish --force-publish=@irubingu/react-8bit-ui --no-git-tag-version --no-push"
   },
   "devDependencies": {
     "@types/react": "^17.0.38",
