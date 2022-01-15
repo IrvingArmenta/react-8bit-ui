@@ -4,7 +4,6 @@
   "description": "generating framework agnostic design tokens with theo",
   "author": "Irving Armenta",
   "license": "MIT",
-  "private": true,
   "source": "./src/index.ts",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -12,12 +11,16 @@
   "files": [
     "/lib"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "ts-node --project tsconfig-build.json src/index.ts",
     "prebuild": "rimraf ./build",
     "postbuild": "prettier **/* --write --ignore-unknown --loglevel=error && yarn roll",
     "dev": "watch-run -p 'src/**/*.ts,src/**/*.tsx' yarn build",
-    "roll": "rollup -c"
+    "roll": "rollup -c",
+    "prepublish": "build"
   },
   "devDependencies": {
     "@types/node": "^17.0.5",
