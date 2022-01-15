@@ -1,12 +1,12 @@
 {
     "compilerOptions": {
       "allowSyntheticDefaultImports": true,
-      "baseUrl": "./build",
+      "baseUrl": "./src",
     
       "target": "es5",                                  /* Set the JavaScript language version for emitted 
   
       /* Modules */
-      "module": "esNext",                                /* Specify what module code is generated. */
+      "module": "CommonJs",                                /* Specify what module code is generated. */
       "moduleResolution": "node",                       /* Specify how TypeScript looks up a file from                /* Allow accessing UMD globals from modules. */
       "resolveJsonModule": true,                        /* Enable importing .json files */
       // "noResolve": true,                                /* Disallow `import`s, `require`s or `<reference>`s from expanding the number of files TypeScript should add to a project. */
@@ -21,7 +21,7 @@
       // "declarationMap": true,                           /* Create sourcemaps for d.ts files. */
       // "emitDeclarationOnly": true,                      /* Only output d.ts files and not JavaScript files. */
       "sourceMap": true,                               
-      "outDir": "lib/esm",                                   
+      "outDir": "./build",                                   
       "esModuleInterop": true,                            
       "forceConsistentCasingInFileNames": true,           
   
@@ -29,7 +29,7 @@
       "strict": true,                                      /* Enable all strict type-checking options. */
       "skipLibCheck": true                                /* Skip type checking all .d.ts files. */
     },
-    "include": ["./build/**/*.ts"],
+    "include": ["./src/**/*.ts"],
     "exclude": ["node_modules", "lib"]
   }
   
