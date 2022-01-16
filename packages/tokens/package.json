@@ -1,15 +1,13 @@
 {
   "name": "@irubingu/react-8bit-tokens",
-  "version": "1.2.9-alpha.0",
+  "version": "1.2.13-alpha.0",
   "description": "generating framework agnostic design tokens with theo",
   "author": "Irving Armenta",
   "license": "MIT",
   "source": "./src/index.ts",
   "main": "./build/index.ts",
   "files": [
-    "./build/**/*.ts",  
-    "./build/**/*.json",  
-    "./build/**/*.css"
+    "/build"
   ],
   "publishConfig": {
     "access": "public"
