@@ -7,9 +7,7 @@
   "source": "./src/index.ts",
   "main": "./build/index.ts",
   "files": [
-    "./build/**/*.ts",
-    "./build/**/*.json",
-    "./build/**/*.css"
+    "/build"
   ],
   "publishConfig": {
     "access": "public"
