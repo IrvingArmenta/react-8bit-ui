@@ -1,4 +1,4 @@
-import { colorsTokens } from '@irubingu/react-8bit-tokens/build';
+import { colorsTokens } from '@irubingu/react-8bit-tokens';
 import { CSS } from '@stitches/react';
 import type { FC } from 'react';
 declare type React8bitUiContainerType = FC<{

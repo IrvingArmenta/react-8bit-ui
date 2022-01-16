@@ -5,11 +5,11 @@
   "author": "Irving Armenta",
   "license": "MIT",
   "source": "./src/index.ts",
-  "main": "./lib/cjs/index.js",
-  "module": "./lib/esm/index.js",
-  "types": "./lib/esm/index.d.ts",
+  "main": "./build/index.ts",
   "files": [
-    "/lib"
+    "./build/**/*.ts",  
+    "./build/**/*.json",  
+    "./build/**/*.css"
   ],
   "publishConfig": {
     "access": "public"
@@ -17,9 +17,8 @@
   "scripts": {
     "build": "ts-node --project tsconfig-build.json src/index.ts",
     "prebuild": "rimraf ./build",
-    "postbuild": "prettier **/* --write --ignore-unknown --loglevel=error && yarn roll",
+    "postbuild": "prettier **/* --write --ignore-unknown --loglevel=error && yarn tsc",
     "dev": "watch-run -p 'src/**/*.ts,src/**/*.tsx' yarn build",
-    "roll": "rollup -c",
     "prepublish": "build"
   },
   "devDependencies": {
