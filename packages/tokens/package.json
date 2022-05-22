@@ -17,7 +17,7 @@
     "prebuild": "rimraf ./build",
     "postbuild": "prettier **/* --write --ignore-unknown --loglevel=error && yarn tsc",
     "dev": "watch-run -p 'src/**/*.ts,src/**/*.tsx' yarn build",
-    "prepublish": "yarn build"
+    "prepare": "yarn build"
   },
   "devDependencies": {
     "@types/node": "^17.0.5",

@@ -11,9 +11,9 @@
   "author": "Irving Armenta",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c",
+    "build": "rimraf lib && rollup -c",
     "dev": "watch-run -p 'src/**/*.ts,src/**/*.tsx' yarn build",
-    "prepublish": "rollup -c"
+    "prepare": "rollup -c"
   },
   "publishConfig": {
     "access": "public"
