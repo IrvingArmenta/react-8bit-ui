@@ -39,8 +39,10 @@ async function trans(file: string) {
       const { data, ext } = formatStr;
       const fileName = file.replace('.json', '');
       const vars = await data;
+
       if (file === 'tokens.json') {
         await promises.writeFile(`./build/${fileName + ext}`, vars, 'utf8');
+
         // json format vars
         // building ts file
         if (vars[0] === '{') {
@@ -67,6 +69,7 @@ async function trans(file: string) {
           vars,
           'utf8'
         );
+
         // json format vars
         // building ts file
         if (vars[0] === '{') {
