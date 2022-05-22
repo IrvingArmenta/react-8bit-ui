@@ -2,7 +2,7 @@
   "plugins": ["prettier"],
   "extends": ["prettier"],
   "rules": {
-    "prettier/prettier": ["error", {"singleQuote": true }],
+    "prettier/prettier": ["error", {"singleQuote": true, "endOfLine": "auto" }],
     "react/jsx-filename-extension": "off",
     "react/jsx-props-no-spreading": "off",
     "react/no-unused-prop-types": "off",

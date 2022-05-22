@@ -7,24 +7,22 @@ export default {
   input: 'build/index.ts',
   output: [
     {
-      file: "./lib/cjs/index.js",
+      file: './lib/cjs/index.js',
       format: 'cjs',
       sourcemap: true
     },
     {
-      file: "./lib/esm/index.js",
+      file: './lib/esm/index.js',
       format: 'es',
       sourcemap: true
-    },
+    }
   ],
-  external: [
-    ...Object.keys(pkg.peerDependencies || {})
-  ],
+  external: [...Object.keys(pkg.peerDependencies || {})],
   plugins: [
     typescript({
-      typescript: require('typescript'),
+      typescript: require('typescript')
     }),
     sourcemaps(),
     terser()
-  ],
+  ]
 };

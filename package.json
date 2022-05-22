@@ -1,36 +1,43 @@
 {
   "name": "@irubingu/root",
   "version": "1.0.0",
-  "description": "components library with lerna and parcel",
+  "description": "components library with turbo and rollup",
   "main": "index.js",
   "author": "Irving Armenta",
   "license": "MIT",
   "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
-  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
   "scripts": {
-    "dev": "lerna run dev --parallel",
-    "force-publish": "lerna publish --force-publish=@irubingu/react-8bit-ui --no-git-tag-version --no-push"
+    "build": "turbo run build",
+    "dev": "turbo run dev --no-cache --parallel --continue",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean && del node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build --filter=docs^... && changeset publish"
   },
   "devDependencies": {
-    "@types/react": "^17.0.38",
-    "@types/react-dom": "^17.0.11",
-    "@typescript-eslint/eslint-plugin": "^5.9.0",
-    "@typescript-eslint/parser": "^5.9.0",
-    "eslint": "^8.6.0",
-    "eslint-config-prettier": "^8.3.0",
+    "@changesets/cli": "^2.22.0",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.4",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.28.0",
-    "lerna": "^4.0.0",
-    "motion": "^10.4.0",
-    "prettier": "^2.5.1",
-    "react": "^17.0.2",
-    "typescript": "^4.5.4"
+    "eslint-plugin-react": "^7.30.0",
+    "motion": "^10.8.2",
+    "plop": "^3.1.0",
+    "prettier": "^2.6.2",
+    "react": "^18.1.0",
+    "turbo": "^1.2.11",
+    "typescript": "^4.6.4"
   },
   "dependencies": {
-    "@stitches/react": "^1.2.6"
+    "@stitches/react": "^1.2.8"
   }
 }
